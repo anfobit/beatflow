@@ -12,7 +12,7 @@ class Node(Module):
     def spike_delay(self):
         self._out_spike_pos = min(self._out_spike_pos + 1, self._out_dim-1)
     def spike_speed_up(self):
-        self._out_spike_pos = min(self._out_spike_pos - 1, self._out_dim-1) 
+        self._out_spike_pos = max(self._out_spike_pos - 1, 0) 
 
     _threshold = 1
     _potential = 0
