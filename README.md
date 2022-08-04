@@ -1,2 +1,2 @@
 # beatflow
-Spike Neural Network
+Spiking Neural Network
